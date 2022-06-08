@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+.cont{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.card{
+    display: grid;
+    grid-template-rows: 55% 45%;
+    width: 28vw;
+    height: 55vh;
+    min-width: 250px;
+    min-height: 350px;
+    animation: pop 1s 1;
+}
+.card2{
+    width: 28vw;
+    height: 30vh;
+    animation: pop 1s 1;
+    min-height: 200px;
+    min-width: 280px;
+}
+img{
+    height:170px;
+    width: 170px;
+    border-radius: 50%;
+}
+.foot{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    font-family: 'Fredoka One', cursive;
+    color:rgb(80, 80, 80);
+}
+.head{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    font-family: 'Fredoka One', cursive;
+}
+.btn:hover{
+    animation: pop 1s 1;
+}
+@media screen and (max-height:800px) and (max-width:400px){
+    .cont{
+        height: 88vh;
+    }
+}
+@media screen and (max-height:420px){
+    .foot{
+        display: none;
+    }
+    .head{
+        display: none;
+    }
+}
+@keyframes pop{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.1);}
+    100%{transform:scale(1);}
+}

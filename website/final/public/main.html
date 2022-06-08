@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/iot.png">
+    <!-- Bootstrap5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>LED CONTROLLER</title>
+</head>
+<body>
+    <div class="cont d-flex justify-content-center align-items-center p-2 bg-light">
+        <div class="head text-center m-2"><h2>LED CONTROLLER</h2></div>
+        <main class="card2 rounded p-2 text-center">
+            <form action="/main" method="POST">
+                <p><label for="command" class="form-label"><h5>Enter command</h5></label></p>
+                <p><input type="text" name="command" class="form-control" placeholder="on\off" required autofocus></p>
+                <p><button id="on" class="btn btn-success" type="submit">GO</button></p>
+            </form>
+        </main>
+        <div class="foot text-center"><h5>Made by Md Moinuddin</h5></div>
+    </div>
+</body>
+</html>
